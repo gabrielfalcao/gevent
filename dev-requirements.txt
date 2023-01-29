@@ -20,6 +20,6 @@ zest.releaser[recommended]
 # benchmarks use this
 pyperf >= 1.6.1
 
-greenlet >= 1.0
+greenlet >= 2.0 ;platform_python_implementation=="CPython"
 
 -e .[test,docs]

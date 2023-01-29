@@ -104,3 +104,4 @@ deps/libuv/.libs
 deps/libuv/*.lo
 deps/libuv/*.la
 deps/libuv/*.o
+.venv/
