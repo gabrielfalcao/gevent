@@ -114,3 +114,4 @@ deps/c-ares/src/tools/ahost
 deps/libuv/configure~
 deps/c-ares/include/ares_build.h
 deps/libev/ev.3
+dist/

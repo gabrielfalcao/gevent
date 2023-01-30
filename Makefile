@@ -128,6 +128,7 @@ $(REQUIREMENTS_PATH):
 	dependencies \
 	develop \
 	setup \
+	build \
 	run \
 	tests \
 	unit \
