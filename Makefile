@@ -26,10 +26,10 @@ export CC				?=	"ccache gcc"
 export CCACHE_NOCPP2			:=	true
 export CCACHE_SLOPPINESS		:=	file_macro,time_macros,include_file_ctime,include_file_mtime
 export CCACHE_NOHASHDIR		:=	true
-export BUILD_LIBS			:=	$(GIT_ROOT)/.libs/
+export BUILD_LIBS			:=	$(GIT_ROOT)/.libs
 export LDFLAGS				:=	-L$(BUILD_LIBS)/lib $(LDFLAGS)
-export CPPFLAGS			:=	-I$(BUILD_LIBS)/include $(CPPFLAGS)
-export LD_LIBRARY_PATH		:=	$(LD_LIBRARY_PATH):$(BUILD_LIBS)/lib
+export CPPFLAGS			:=	-I$(BUILD_LIBS)/include -I$(GIT_ROOT)/src/gevent  $(CPPFLAGS)
+export LD_LIBRARY_PATH		:=	$(BUILD_LIBS)/lib:$(LD_LIBRARY_PATH)
 
 ######################################################################
 # Phony targets (only exist for typing convenience and don't represent
